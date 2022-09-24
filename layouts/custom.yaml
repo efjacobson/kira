@@ -1,6 +1,3 @@
-#   default from kiibohd and:
-#     - layer 7: LALT+CAPSLOCK
-#     - 7:J = LEFT
 matrix:
   - code: "0x01"
     x: 0
@@ -299,8 +296,26 @@ matrix:
         key: "1"
         label: "1"
       "1":
-        key: International1
-        label: INTL1
+        key: "1"
+        label: "1"
+      "2":
+        key: "2"
+        label: "2"
+      "3":
+        key: "3"
+        label: "3"
+      "4":
+        key: "4"
+        label: "4"
+      "5":
+        key: "5"
+        label: "5"
+      "6":
+        key: "6"
+        label: "6"
+      "7":
+        key: "7"
+        label: "7"
     triggers: null
   - code: "0x16"
     x: 8
@@ -715,8 +730,8 @@ matrix:
     h: 4
     layers:
       "0":
-        key: CAPSLOCK
-        label: CAPSLK
+        key: "#:Layer[7]"
+        label: LAYER-7
     triggers: null
   - code: "0x39"
     x: 7
@@ -796,9 +811,6 @@ matrix:
       "0":
         key: J
         label: J
-      "7":
-        key: LEFT
-        label: ←
     triggers: null
   - code: "0x40"
     x: 35
@@ -1101,6 +1113,9 @@ matrix:
       "0":
         key: LCTRL
         label: LCTRL
+      "7":
+        key: "#:LayerLock[7]"
+        label: LOCK-7
     triggers: null
   - code: "0x5A"
     x: 5
@@ -1207,8 +1222,10 @@ custom:
 
 
     Layer[1] : fade_layer_highlight(1);
+
     Layer[2] : fade_layer_highlight(2);
-    Layer[7] : fade_layer_highlight(7);
+
+    Layer[7] : fade_layer_highlight(2);
 
 
     ### Fade Configuration ###
@@ -1352,7 +1369,7 @@ custom:
 
     # Macro ''Layer 7''
 
-    U"LALT" + U"CAPSLOCK" : Layer[7];
+    U"CAPSLOCK" : Layer[7];
 
     #~~~END ANIMATION (${__NAME__}) INJECTION~~~#
 
