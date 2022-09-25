@@ -1625,6 +1625,53 @@ custom:
     T[21,6](4) : A[orange_fade_in](start, replace:clear); # Orange fade animation
 
     "
+  "7": '
+
+    #~~~START ANIMATION (${__NAME__}) INJECTION~~~#
+
+    # Macro ''tile_top_left''
+
+    U"P7" : U"LCTRL" + U"RSHIFT" + U"P7";
+
+    # Macro ''tile_top''
+
+    U"P8" : U"LCTRL" + U"RSHIFT" + U"P8";
+
+    # Macro ''tile_top_right''
+
+    U"P9" : U"LCTRL" + U"RSHIFT" + U"P9";
+
+    # Macro ''tile_left''
+
+    U"P4" : U"LCTRL" + U"RSHIFT" + U"P4";
+
+    # Macro ''maximize''
+
+    U"P5" : U"LCTRL" + U"RSHIFT" + U"P5";
+
+    # Macro ''tile_right''
+
+    U"P6" : U"LCTRL" + U"RSHIFT" + U"P6";
+
+    # Macro ''tile_bottom_left''
+
+    U"P1" : U"LCTRL" + U"RSHIFT" + U"P1";
+
+    # Macro ''tile_bottom''
+
+    U"P2" : U"LCTRL" + U"RSHIFT" + U"P2";
+
+    # Macro ''tile_bottom_right''
+
+    U"P3" : U"LCTRL" + U"RSHIFT" + U"P3";
+
+    # Macro ''minimize''
+
+    U"P0" : U"LCTRL" + U"RSHIFT" + U"P0";
+
+    #~~~END ANIMATION (${__NAME__}) INJECTION~~~#
+
+    '
 animations:
   keys_color_cycle:
     type: custom
@@ -3573,4 +3620,75 @@ leds:
     scanCode: "0x13"
     x: 342.9
     y: 0
-macros: {}
+macros:
+  "7":
+    - name: tile_top_left
+      trigger:
+        - - P7
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P7
+    - name: tile_top
+      trigger:
+        - - P8
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P8
+    - name: tile_top_right
+      trigger:
+        - - P9
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P9
+    - name: tile_left
+      trigger:
+        - - P4
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P4
+    - name: maximize
+      trigger:
+        - - P5
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P5
+    - name: tile_right
+      trigger:
+        - - P6
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P6
+    - name: tile_bottom_left
+      trigger:
+        - - P1
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P1
+    - name: tile_bottom
+      trigger:
+        - - P2
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P2
+    - name: tile_bottom_right
+      trigger:
+        - - P3
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P3
+    - name: minimize
+      trigger:
+        - - P0
+      output:
+        - - LCTRL
+          - RSHIFT
+          - P0
