@@ -14,6 +14,9 @@ matrix:
       "2":
         key: "#:animation_control(4)"
         label: V:RESET
+      "7":
+        key: "#:animation_control(4)"
+        label: V:RESET
     triggers: null
   - code: "0x02"
     x: 4
@@ -30,6 +33,9 @@ matrix:
       "2":
         key: "#:rotate(0, 1)"
         label: C:KEYS
+      # "7":
+      #   key: "#:A[fingerprints](start)"
+      #   label: "A:start"
     triggers: null
   - code: "0x03"
     x: 8
@@ -478,6 +484,9 @@ matrix:
       "0":
         key: BACKSPACE
         label: BKSP
+      "7":
+        key: DELETE
+        label: DEL
     triggers: null
   - code: "0x22"
     x: 60
@@ -626,6 +635,9 @@ matrix:
       "1":
         key: CONS:INTERNET BROWSER
         label: WEB
+      "7":
+        key: UP
+        label: ↑
     triggers: null
   - code: "0x2F"
     x: 38
@@ -823,6 +835,9 @@ matrix:
       "0":
         key: J
         label: J
+      "7":
+        key: LEFT
+        label: ←
     triggers: null
   - code: "0x40"
     x: 35
@@ -833,6 +848,9 @@ matrix:
       "0":
         key: K
         label: K
+      "7":
+        key: DOWN
+        label: ↓
     triggers: null
   - code: "0x41"
     x: 39
@@ -843,6 +861,9 @@ matrix:
       "0":
         key: L
         label: L
+      "7":
+        key: RIGHT
+        label: →
     triggers: null
   - code: "0x42"
     x: 43
