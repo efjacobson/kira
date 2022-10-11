@@ -227,6 +227,9 @@ matrix:
       "2":
         key: "#:animation_control(2)"
         label: V:PLAY
+      "7":
+        key: '#:U"Volume Down" + CONS"Volume Down"'
+        label: VOL-
     triggers: null
   - code: "0x11"
     x: 64
@@ -243,6 +246,9 @@ matrix:
       "2":
         key: "#:animation_control(3)"
         label: V:STOP
+      "7":
+        key: '#:U"Volume Up" + CONS"Volume Up"'
+        label: VOL+
     triggers: null
   - code: "0x12"
     x: 68
@@ -259,6 +265,9 @@ matrix:
       "2":
         key: "#:ledControl(7, 1)"
         label: V:SPD+
+      "7":
+        key: CONS:PAUSE PLAY
+        label: PL/PS
     triggers: null
   - code: "0x13"
     x: 72
@@ -275,6 +284,9 @@ matrix:
       "2":
         key: "#:ledControl(8, 1)"
         label: V:SPD-
+      "7":
+        key: '#:U"Mute" + CONS"Mute"'
+        label: MUT
     triggers: null
   - code: "0x14"
     x: 0
